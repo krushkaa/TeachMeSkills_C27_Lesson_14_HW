@@ -1,6 +1,5 @@
 package com.teachmeskills.lesson14.task1.run;
 
-import com.teachmeskills.lesson14.task1.consts.Consts;
 import com.teachmeskills.lesson14.task1.validator.Validator;
 
 import java.io.BufferedReader;
@@ -11,6 +10,7 @@ import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
+        System.out.println("Please enter the path to the file.");
         Scanner scan = new Scanner(System.in);
         String filePath = scan.nextLine();
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
@@ -28,6 +28,7 @@ public class Runner {
             System.out.println("ERROR. Thank you for your patience. We are working on it.");
         }
         scan.close();
+        System.out.println("The program has finished sorting your file.");
     }
 }
 
