@@ -15,7 +15,7 @@ public class Validator {
         try {
             if (s.isEmpty()) return;
             if (s.length() != Consts.STRING_LENGTH) {
-                fileWriterErr.write("Invalid string length. Maximum length: " + Consts.STRING_LENGTH + ". \n");
+                fileWriterErr.write("Invalid string length " + s + ". Maximum length: " + Consts.STRING_LENGTH + ". \n");
                 return;
             }
             char[] chars = s.toCharArray();
